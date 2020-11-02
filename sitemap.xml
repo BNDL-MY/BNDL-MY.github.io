@@ -102,21 +102,14 @@
 
   
   <url>
-    <loc>http://bndl-my.github.io/tags/linux/</loc>
-    <lastmod>2020-11-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://bndl-my.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2020-11-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://bndl-my.github.io/tags/%E6%84%9F%E8%A7%A6/</loc>
+    <lastmod>2020-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://bndl-my.github.io/tags/linux/</loc>
     <lastmod>2020-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -165,6 +158,13 @@
   </url>
   
   <url>
+    <loc>http://bndl-my.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2020-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://bndl-my.github.io/tags/%E8%A7%84%E8%8C%83/</loc>
     <lastmod>2020-11-02</lastmod>
     <changefreq>daily</changefreq>
@@ -174,14 +174,14 @@
 
   
   <url>
-    <loc>http://bndl-my.github.io/categories/%E5%BC%80%E5%8F%91/</loc>
+    <loc>http://bndl-my.github.io/categories/%E9%97%B2%E7%A2%8E/</loc>
     <lastmod>2020-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://bndl-my.github.io/categories/%E9%97%B2%E7%A2%8E/</loc>
+    <loc>http://bndl-my.github.io/categories/%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2020-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
