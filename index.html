@@ -1,0 +1,328 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>J.Nemo's blog</title><meta name="author" content="J.Nemo"><meta name="copyright" content="J.Nemo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="Laugh and grow fat">
+<meta property="og:type" content="website">
+<meta property="og:title" content="J.Nemo&#39;s blog">
+<meta property="og:url" content="http://bndl-my.github.io/index.html">
+<meta property="og:site_name" content="J.Nemo&#39;s blog">
+<meta property="og:description" content="Laugh and grow fat">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://www.obzhi.com/wp-content/uploads/2020/09/long2.jpg">
+<meta property="article:author" content="J.Nemo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.obzhi.com/wp-content/uploads/2020/09/long2.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://bndl-my.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  ClickShowText: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2020-11-02 18:06:58'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="J.Nemo's blog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="http://www.obzhi.com/wp-content/uploads/2020/09/long2.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(http://www.obzhi.com/wp-content/uploads/2020/10/youhuazhongdenvren.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">J.Nemo's blog</a></span><span id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site-title">J.Nemo's blog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/BNDL-MY" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:muxiaoningdewei@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/11/27/%E5%8C%97%E5%AE%81%E8%AE%A1%E5%88%92/" title="北宁计划">     <img class="post_bg" src="http://www.obzhi.com/wp-content/uploads/2020/10/yuhanyuan.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="北宁计划"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/11/27/%E5%8C%97%E5%AE%81%E8%AE%A1%E5%88%92/" title="北宁计划">北宁计划</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-11-27T04:24:26.000Z" title="发表于 2019-11-27 12:24:26">2019-11-27</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E9%97%B2%E7%A2%8E/">闲碎</a></span></div><div class="content">北宁动力（自动化，机器人，AI，软硬件同步）   BN电子（手机，PC，芯片的集成，家电，构建用户生态）  北宁半导体 （芯片，显卡）
+北宁能源（石油加工，CH4运输以及二次开发，电力电站，供能供热，新能源产业，节能产业） 
+北宁科技（铁三角（流量，产品，运营）：娱乐（pc游戏，移动游戏，VR游戏，主机游戏，新概念游戏的开发），内容（应用，媒体，影业，动漫），社交（邮箱，即时通讯），云与智慧（云服务器，大数据，云计算））
+北宁网络（大型的高水平软件工程，覆盖多种行业）  北宁通讯 （通信协议，先进的通讯技术） 北宁终端（量子计算，人工智能，操作系统，） 
+北宁医院（保障员工健康，承担社会责任，解决目前的难病）   北宁医药（生产以及研发）  北宁医疗器械
+北宁BANK（复合型的银行） 北宁风投  北宁证券  北宁咨询（战略咨询，管理咨询）  以北宁之名控制很多媒体以及律师事务所。
+北宁工业（农牧渔业工业化（地区（非洲，南美，我国西北），大型的农工业发展研究，器械研究），重工（高精度机床，精密仪器，大型机械，化学（电池，燃料，催化）），轻工（家具，纺织，造纸，陶瓷，玩具，体育器械等），运 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/11/26/%E5%90%8D%E5%8D%95/" title="培训机构">     <img class="post_bg" src="https://cdn.pixabay.com/photo/2019/11/06/17/26/gear-4606749_960_720.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="培训机构"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/11/26/%E5%90%8D%E5%8D%95/" title="培训机构">培训机构</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-11-26T01:19:25.000Z" title="发表于 2019-11-26 09:19:25">2019-11-26</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E9%97%B2%E7%A2%8E/">闲碎</a></span></div><div class="content">it培训机构尚硅谷尚学堂慕课网传智播客（java）黑马程序员（传智播客旗下）博学谷（传智播客旗下）饥人谷（前端）麦子学院达内教育腾讯课堂网易云课堂兄弟连教育 (擅长php)极客时间极客学院图灵学院咕泡学院鲁班学院谷粒学院（尚硅谷）瑞客论坛IT资源网动力节点java自学网51ctohttp://www.52download.cn
+
+考研机构文都考研学府考研启航考研新东方海天教育考研名师政治肖秀荣
+徐涛
+石磊
+数学张宇（高数）
+杨超(高数)
+汤家凤
+李永乐(线代)
+王式安(概率论)
+余丙森(概率论)
+英语何凯文
+张剑
+田静（长难句）
+朱伟（单词）
+唐迟（阅读理解）
+王江涛（写作）
+四六级没过，阅读跟陈仲恺、语法和作文跟刘晓艳
+专业课
+考研经验考研用书
+知乎（用书推荐）：https://www.zhihu.com/question/51026122/answer/790440582
+考研的网课：https://www.zhihu.com/question/267854277/answer/787571925
+如何选择专业
+选专业：https://www.zhihu.com/question/ ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/11/25/%E6%97%A5%E5%B8%B8%E6%8F%92%E4%BB%B6/" title="日常插件">     <img class="post_bg" src="https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg?cs=srgb&amp;dl=ipad-3183132.jpg&amp;fm=jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日常插件"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/11/25/%E6%97%A5%E5%B8%B8%E6%8F%92%E4%BB%B6/" title="日常插件">日常插件</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-11-25T10:21:29.000Z" title="发表于 2019-11-25 18:21:29">2019-11-25</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a></span></div><div class="content">
+这些软件目前是我自己使用的，为了换机的不必要的麻烦，留作备份
+
+ChromeInfinity 新标签页(Pro)
+暴力猴
+OneTab Plus:标签效率管理扩展
+Proxy SwitchyOmega
+谷歌上网助手
+AdGuard 广告拦截器
+IDM Integration Module
+Postman
+WEB前端助手(FeHelper)
+Stylish
+Adblock Plus
+AutoPagerize
+ideaMaterial Theme UI（美化主体）
+Maven Helper
+Alibaba Java Coding Guidelines
+FindBugs
+Free Mybatis plugin
+Mybatis-log-plugin
+Free-idea-mybatis
+CodeMaker
+Translation
+Background Image Plus(我不用,装13专用)
+vscodeChinese (Simplified) Language Pack for Visual Studio Code
+Debugger for Chrome
+ESLint
+Material T ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/11/25/%E6%8A%80%E6%9C%AF%E8%AF%BE%E7%A8%8B%E6%94%B6%E9%9B%86/" title="技术课程收集">     <img class="post_bg" src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_960_720.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="技术课程收集"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/11/25/%E6%8A%80%E6%9C%AF%E8%AF%BE%E7%A8%8B%E6%94%B6%E9%9B%86/" title="技术课程收集">技术课程收集</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-11-25T06:46:28.000Z" title="发表于 2019-11-25 14:46:28">2019-11-25</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E8%B5%84%E6%96%99/">资料</a></span></div><div class="content">C++架构师VIP课程_动脑学院_腾讯课堂链接：https://pan.baidu.com/s/1J2NwX0dPnCbUfKIe2-fYSg提取码：ykmb复制这段内容后打开百度网盘手机App，操作更方便哦图灵学院JAVA分布式架构课程全链接：https://pan.baidu.com/s/1hji-R6ukfQD1knCfxPl83Q提取码：1dja复制这段内容后打开百度网盘手机App，操作更方便哦剑指Java面试-Offer直通车链接：https://pan.baidu.com/s/1WCsTCBPEsEv8m_ORP6Qj-w提取码：kl3z复制这段内容后打开百度网盘手机App，操作更方便哦慕课网java仿抖音实战链接：https://pan.baidu.com/s/1jxP3mFk9ddNGQAdt-rbh9w提取码：wjfk复制这段内容后打开百度网盘手机App，操作更方便哦Java高手加薪课程框架进阶及高级并发进阶链接：https://pan.baidu.com/s/1277869xUMnM5Tz4o7c5Anw提取码：wkfl2019 最新恋上数据结构与算法链接：http ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/11/25/%E8%BF%91%E6%9C%9F%E7%9A%84%E4%B8%AA%E4%BA%BA%E8%AE%A1%E5%88%92/" title="近期的个人计划">     <img class="post_bg" src="https://w.wallhaven.cc/full/dg/wallhaven-dgv8qo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="近期的个人计划"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/11/25/%E8%BF%91%E6%9C%9F%E7%9A%84%E4%B8%AA%E4%BA%BA%E8%AE%A1%E5%88%92/" title="近期的个人计划">近期的个人计划</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-11-25T00:29:24.000Z" title="发表于 2019-11-25 08:29:24">2019-11-25</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E9%97%B2%E7%A2%8E/">闲碎</a></span></div><div class="content">
+2019-11-25
+
+hexo方面：确定next作为工作的博客，而bndl作为个人的生活博客，开发新的音乐播放插件做适配，开发豆瓣的音乐爬取
+java：完成青橙商城的系列学习，微服务的10中架构，电商架构等
+vue：完成vue.js教程的相关课程
+英语：背诵考研单词以及练习VOA
+三方：11-25询问（已解决）
+新点子：生日祝福推送系统
+手机app类似与vip终结者这样的东西
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/11/24/%E6%97%A5%E5%B8%B8%E5%B7%A5%E5%85%B7/" title="日常工具">     <img class="post_bg" src="https://images.pexels.com/photos/163143/sackcloth-sackcloth-textured-laptop-ipad-163143.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日常工具"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/11/24/%E6%97%A5%E5%B8%B8%E5%B7%A5%E5%85%B7/" title="日常工具">日常工具</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-11-24T10:21:22.000Z" title="发表于 2019-11-24 18:21:22">2019-11-24</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a></span></div><div class="content">IDEIntelliJ IDEA 2019.2.1 x64
+JetBrains WebStorm 2019.2.1 x64
+PyCharm
+Vscode
+开发环境node.js
+jdk
+python
+Vue
+开发辅助软件Xshell
+FileZilla
+Postman
+Vmware
+Git
+Svn
+TortoiseGit
+TortoiseSvn
+Maven
+数据库mysql
+Navicat Premium 12（复合型的数据库图形化的工具）
+MongoDB
+Redis
+图片IrfanView
+FastStoneCapture
+Snipaste
+视频Potplayer
+思维导图MindMaster亿图思维导图
+Xmind
+MyDraw思维导图
+下载pandownload beta
+Internet Download Manager IDM
+小玩意fliqlo
+安全火绒安全
+Wise Care 365
+压缩Bandizip
+文档编辑器Editplus
+Notepad++
+Subime text编辑器
+Atom
+Vim
+浏览器Chrome
+Firefox
+Officewps2019政府专用版 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/11/23/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E8%A7%84%E8%8C%83/" title="项目文档规范">     <img class="post_bg" src="https://images.pexels.com/photos/3041180/pexels-photo-3041180.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="项目文档规范"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/11/23/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E8%A7%84%E8%8C%83/" title="项目文档规范">项目文档规范</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-11-23T10:20:52.000Z" title="发表于 2019-11-23 18:20:52">2019-11-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E9%A1%B9%E7%9B%AE/">项目</a></span></div><div class="content">项目文档的总体布局软件文档可以分为开发文档和产品文档两大类，交付用户还有用户文档。
+开发文档
+软件开发计划
+需求规格说明书
+软件概要设计说明
+数据库设计说明
+软件详细设计说明
+可执行程序生成说明
+软件测试计划
+软件测试说明
+软件测试报告
+安装部署手册
+源代码交付说明
+上线部署方案
+上线部署实施报告
+软件终验测试方案
+软件终验测试报告
+
+产品文档
+产品简介
+产品演示
+疑问解答
+功能介绍
+技术白皮书
+评测报告
+
+用户文档
+安装手册
+使用手册
+维护手册
+用户报告
+销售培训
+
+开发文档的具体要求1 软件开发计划(一) 文档内容要求1.引言1.1标识本条应包含本文档的完整标识，以及本文档适用的系统和软件的完整标识，包括标识号、标题、缩略词语、版本号和发行号。
+1.2系统概述本条应简述本文档适用的系统和软件的用途，应描述系统和软件的一般特性；概述系统开发、运行和维护的历史；标识项目的业主方、用户、承建方、监理方等；标识当前和计划的运行现场等。
+1.3文档概述概述本文档的用途和内容，并描述与其使用有关的保密性和私密性的要求。
+1.4与其他计划之间的关系描述本计划和其他项目管理计划的关系。
+1.5输入 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/11/22/Centos7%E5%AE%89%E8%A3%85docker/" title="Centos7安装docker">     <img class="post_bg" src="https://images.pexels.com/photos/2346005/pexels-photo-2346005.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Centos7安装docker"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/11/22/Centos7%E5%AE%89%E8%A3%85docker/" title="Centos7安装docker">Centos7安装docker</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-11-22T10:22:34.000Z" title="发表于 2019-11-22 18:22:34">2019-11-22</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E5%BC%80%E5%8F%91/">开发</a></span></div><div class="content">一、安装docker1、Docker 要求 CentOS 系统的内核版本高于 3.10 ，查看本页面的前提条件来验证你的CentOS 版本是否支持 Docker 。
+通过 uname -r 命令查看你当前的内核版本
+1$ uname -r
+
+2、使用 root 权限登录 Centos。确保 yum 包更新到最新。
+1$ sudo yum update
+
+3、卸载旧版本(如果安装过旧版本的话)
+1$ sudo yum remove docker  docker-common docker-selinux docker-engine
+
+4、安装需要的软件包， yum-util 提供yum-config-manager功能，另外两个是devicemapper驱动依赖的
+1$ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+
+
+5、设置yum源
+1$ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/11/21/%E9%81%8D%E5%8E%86Collection%E9%9B%86%E5%90%88%E7%9A%84%E5%9B%9B%E7%A7%8D%E6%96%B9%E6%B3%95/" title="遍历Collection集合的四种方法">     <img class="post_bg" src="https://images.pexels.com/photos/2301172/pexels-photo-2301172.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="遍历Collection集合的四种方法"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/11/21/%E9%81%8D%E5%8E%86Collection%E9%9B%86%E5%90%88%E7%9A%84%E5%9B%9B%E7%A7%8D%E6%96%B9%E6%B3%95/" title="遍历Collection集合的四种方法">遍历Collection集合的四种方法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-11-21T11:08:40.000Z" title="发表于 2019-11-21 19:08:40">2019-11-21</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/java/">java</a></span></div><div class="content">直接使用Java5提供的foreach循环1234567891011121314import java.util.ArrayList;import java.util.Collection;public class Demo &#123;public static void main(String[] args) &#123;	Collection&lt;String&gt; c = new ArrayList&lt;String&gt;() ;	c.add(&quot;java&quot;) ;	c.add(&quot;javaweb&quot;) ;	c.add(&quot;javascript&quot;) ;	for(String str : c) &#123;		System.out.println(str);		&#125;	&#125;&#125;
+使用Iterable接口的forEach方法（Iterable是Collection的父接口）1234567891011import java.util.ArrayList;import java.util.Collectio ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/11/21/hello-world/" title="Hello World">     <img class="post_bg" src="http://www.obzhi.com/wp-content/uploads/2020/10/gufeng.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/11/21/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-11-21T04:24:26.000Z" title="发表于 2019-11-21 12:24:26">2019-11-21</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E9%97%B2%E7%A2%8E/">闲碎</a></span></div><div class="content">Hello Word我骨子里认为自己是一只Java程序猿</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="http://www.obzhi.com/wp-content/uploads/2020/09/long2.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">J.Nemo</div><div class="author-info__description">Laugh and grow fat</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/BNDL-MY" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:muxiaoningdewei@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2019/11/27/%E5%8C%97%E5%AE%81%E8%AE%A1%E5%88%92/" title="北宁计划"><img src="http://www.obzhi.com/wp-content/uploads/2020/10/yuhanyuan.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="北宁计划"/></a><div class="content"><a class="title" href="/2019/11/27/%E5%8C%97%E5%AE%81%E8%AE%A1%E5%88%92/" title="北宁计划">北宁计划</a><time datetime="2019-11-27T04:24:26.000Z" title="发表于 2019-11-27 12:24:26">2019-11-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2019/11/26/%E5%90%8D%E5%8D%95/" title="培训机构"><img src="https://cdn.pixabay.com/photo/2019/11/06/17/26/gear-4606749_960_720.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="培训机构"/></a><div class="content"><a class="title" href="/2019/11/26/%E5%90%8D%E5%8D%95/" title="培训机构">培训机构</a><time datetime="2019-11-26T01:19:25.000Z" title="发表于 2019-11-26 09:19:25">2019-11-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2019/11/25/%E6%97%A5%E5%B8%B8%E6%8F%92%E4%BB%B6/" title="日常插件"><img src="https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg?cs=srgb&amp;dl=ipad-3183132.jpg&amp;fm=jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日常插件"/></a><div class="content"><a class="title" href="/2019/11/25/%E6%97%A5%E5%B8%B8%E6%8F%92%E4%BB%B6/" title="日常插件">日常插件</a><time datetime="2019-11-25T10:21:29.000Z" title="发表于 2019-11-25 18:21:29">2019-11-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2019/11/25/%E6%8A%80%E6%9C%AF%E8%AF%BE%E7%A8%8B%E6%94%B6%E9%9B%86/" title="技术课程收集"><img src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_960_720.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="技术课程收集"/></a><div class="content"><a class="title" href="/2019/11/25/%E6%8A%80%E6%9C%AF%E8%AF%BE%E7%A8%8B%E6%94%B6%E9%9B%86/" title="技术课程收集">技术课程收集</a><time datetime="2019-11-25T06:46:28.000Z" title="发表于 2019-11-25 14:46:28">2019-11-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2019/11/25/%E8%BF%91%E6%9C%9F%E7%9A%84%E4%B8%AA%E4%BA%BA%E8%AE%A1%E5%88%92/" title="近期的个人计划"><img src="https://w.wallhaven.cc/full/dg/wallhaven-dgv8qo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="近期的个人计划"/></a><div class="content"><a class="title" href="/2019/11/25/%E8%BF%91%E6%9C%9F%E7%9A%84%E4%B8%AA%E4%BA%BA%E8%AE%A1%E5%88%92/" title="近期的个人计划">近期的个人计划</a><time datetime="2019-11-25T00:29:24.000Z" title="发表于 2019-11-25 08:29:24">2019-11-25</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/"><span class="card-category-list-name">java</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%B7%A5%E5%85%B7/"><span class="card-category-list-name">工具</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%BC%80%E5%8F%91/"><span class="card-category-list-name">开发</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%B5%84%E6%96%99/"><span class="card-category-list-name">资料</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%97%B2%E7%A2%8E/"><span class="card-category-list-name">闲碎</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%A1%B9%E7%9B%AE/"><span class="card-category-list-name">项目</span><span class="card-category-list-count">1</span></a></li>
+            
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/PC/" style="font-size: 1.5em; color: #99a9bf">PC</a> <a href="/tags/linux/" style="font-size: 1.1em; color: #999">linux</a> <a href="/tags/%E4%B8%AA%E4%BA%BA/" style="font-size: 1.1em; color: #999">个人</a> <a href="/tags/%E5%90%8D%E5%8D%95/" style="font-size: 1.1em; color: #999">名单</a> <a href="/tags/%E6%84%9F%E8%A7%A6/" style="font-size: 1.1em; color: #999">感触</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 1.1em; color: #999">测试</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 1.1em; color: #999">算法</a> <a href="/tags/%E8%A7%84%E8%8C%83/" style="font-size: 1.1em; color: #999">规范</a> <a href="/tags/%E8%AE%A1%E5%88%92/" style="font-size: 1.1em; color: #999">计划</a> <a href="/tags/%E8%B5%84%E6%96%99/" style="font-size: 1.1em; color: #999">资料</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/11/"><span class="card-archive-list-date">十一月 2019</span><span class="card-archive-list-count">10</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">10</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2020-11-02T10:06:58.232Z"></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 By J.Nemo</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    var typed = new Typed("#subtitle", {
+      strings: "保持饥饿&#44;头脑清醒,Man is the master of his destiny".split(","),
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = '保持饥饿&#44;头脑清醒'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') subtitleType()
+  else $.getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js', subtitleType)
+} else {
+  subtitleType()
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script></div></body></html>
