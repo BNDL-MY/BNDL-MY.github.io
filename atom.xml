@@ -6,7 +6,7 @@
   <link href="http://bndl-my.github.io/atom.xml" rel="self"/>
   
   <link href="http://bndl-my.github.io/"/>
-  <updated>2020-11-03T01:08:21.591Z</updated>
+  <updated>2021-02-20T00:29:52.334Z</updated>
   <id>http://bndl-my.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>centos最小化安装常用软件</title>
+    <link href="http://bndl-my.github.io/2021/02/20/centos%E6%9C%80%E5%B0%8F%E5%8C%96%E5%AE%89%E8%A3%85%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    <id>http://bndl-my.github.io/2021/02/20/centos%E6%9C%80%E5%B0%8F%E5%8C%96%E5%AE%89%E8%A3%85%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</id>
+    <published>2021-02-20T00:27:21.000Z</published>
+    <updated>2021-02-20T00:29:52.334Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>改网卡自启动</strong></p><ul><li>修改网卡配置文件，将ONBOOT的值改为yes</li></ul><p>vi /etc/sysconfig/network-scripts/ifcfg-ens32</p><ul><li>重启网络服务</li></ul><p>service network start</p><hr><p><strong>改yum源</strong></p><ul><li>先装个wget</li></ul><p>yum -y install wget</p><ul><li>备份yum仓库文件</li></ul><p>mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup</p><ul><li>阿里云仓库手册</li></ul><p><a href="https://developer.aliyun.com/mirror/centos?spm=a2c6h.13651102.0.0.53322f70Adftrz">https://developer.aliyun.com/mirror/centos?spm=a2c6h.13651102.0.0.53322f70Adftrz</a></p><ul><li>替换成阿里云仓库</li></ul><p>wget -O /etc/yum.repos.d/CentOS-Base.repo <a href="https://mirrors.aliyun.com/repo/Centos-7.repo">https://mirrors.aliyun.com/repo/Centos-7.repo</a></p><ul><li>清除缓存</li></ul><p>yum clean all</p><ul><li>新建缓存</li></ul><p>yum makecache</p><ul><li>如果新建缓存失败可能是dns解析错误，手动配置dns为8.8.8.8即可</li></ul><hr><p><strong>安装常用软件</strong></p><p><strong>net-tools</strong></p><p>yum -y install net-tools</p><p><strong>wget、vim、mlocate、lsof、rz、zip</strong></p><p>yum -y install wget vim mlocate lsof lrzsz unzip zip</p><p><strong>gcc全家桶</strong></p><p>yum -y install gcc*</p><p><strong>openssl-devel</strong></p><p>yum -y install openssl-devel</p><p><strong>bash-completion</strong></p><p>yum -y install bash-completion</p><hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;改网卡自启动&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;修改网卡配置文件，将ONBOOT的值改为yes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;vi /etc/sysconfig/network-scripts/ifcfg-ens32&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;重启网</summary>
+      
+    
+    
+    
+    <category term="Code" scheme="http://bndl-my.github.io/categories/Code/"/>
+    
+    
+    <category term="Code" scheme="http://bndl-my.github.io/tags/Code/"/>
+    
+  </entry>
   
   <entry>
     <title>BYR-Navi：一个开源、美观网站导航程序</title>
