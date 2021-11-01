@@ -6,7 +6,7 @@
   <link href="http://bndl-my.github.io/atom.xml" rel="self"/>
   
   <link href="http://bndl-my.github.io/"/>
-  <updated>2021-05-27T09:10:10.253Z</updated>
+  <updated>2021-11-01T01:18:53.112Z</updated>
   <id>http://bndl-my.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微服务架构技术栈</title>
+    <link href="http://bndl-my.github.io/2021/11/01/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E6%8A%80%E6%9C%AF%E6%A0%88/"/>
+    <id>http://bndl-my.github.io/2021/11/01/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E6%8A%80%E6%9C%AF%E6%A0%88/</id>
+    <published>2021-11-01T01:16:59.000Z</published>
+    <updated>2021-11-01T01:18:53.112Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="微服务架构技术栈"><a href="#微服务架构技术栈" class="headerlink" title="微服务架构技术栈"></a>微服务架构技术栈</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Spring Cloud Alibaba是Spring Cloud下的一个子项目，Spring Cloud Alibaba为分布式应用程序开发提供了一站式解决方案，它包含开发分布式应用程序所需的所有组件，使您可以轻松地使用Spring Cloud开发应用程序，使用Spring Cloud Alibaba，您只需要添加一些注解和少量配置即可将Spring Cloud应用程序连接到Alibaba的分布式解决方案，并使用Alibaba中间件构建分布式应用程序系统。Spring Cloud Alibaba 是阿里巴巴开源中间件跟 Spring Cloud 体系的融合。 </p><h2 id="核心支撑组件"><a href="#核心支撑组件" class="headerlink" title="核心支撑组件"></a>核心支撑组件</h2><p>服务网关 Gateway</p><p>服务注册发现 Nacos</p><p>服务配置中心 Nacos</p><p>分布式事务 Seata</p><p>服务熔断限流 Sentinel</p><p>服务调用 OpenFeign、Dubbo</p><p>服务认证授权 Spring Security Oauth2.0</p><h2 id="监控反馈组件"><a href="#监控反馈组件" class="headerlink" title="监控反馈组件"></a>监控反馈组件</h2><p>服务监控 SpringBootAdmin</p><p>服务器指标 Prometheus+Grafana</p><p>分布式日志 Loki+Grafana</p><p>服务调用链 SkyWalking</p><h2 id="辅助组件"><a href="#辅助组件" class="headerlink" title="辅助组件"></a>辅助组件</h2><p>文件存储 Minio</p><p>搜索引擎 Elasticsearch</p><p>数据库集群 PXC</p><p>Redis集群 Redis-Cluster</p><p>消息队列 RocketMq集群</p><p>代码仓库 GitLab</p><p>自动部署 Jenkins</p><p>Jar包仓库 Nexus</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;微服务架构技术栈&quot;&gt;&lt;a href=&quot;#微服务架构技术栈&quot; class=&quot;headerlink&quot; title=&quot;微服务架构技术栈&quot;&gt;&lt;/a&gt;微服务架构技术栈&lt;/h1&gt;&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; titl</summary>
+      
+    
+    
+    
+    <category term="Java" scheme="http://bndl-my.github.io/categories/Java/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>辛丑年5月随笔</title>
